@@ -34,7 +34,7 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <Hero />
-        <CompanyLogo />
+        {/*<CompanyLogo />*/}
         <PurposeSection />
         <FeaturesSection />
         <ScheduleSection />

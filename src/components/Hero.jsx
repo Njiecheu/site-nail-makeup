@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import heroImage from '../assets/hero-image.png'
+import heroImage from '../assets/hero.jpg'
 
 const Hero = () => {
   return (
@@ -27,7 +27,6 @@ const Hero = () => {
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-300/60"></span>
           </span>{' '}
           professionnels
-          <span className="inline-block ml-2 animate-pulse">💅</span>
         </motion.h1>
 
         <motion.p 
