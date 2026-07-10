@@ -42,7 +42,7 @@ const Footer = () => {
               variants={fadeIn('down', 0.5)}
               className="flex items-center gap-2 mb-6"
             >
-              <span className="text-xl font-bold text-pink-500">Wok&apos;s Signature</span>
+              <span className="text-xl font-bold text-pink-500">Wok&apos;Signature</span>
             </motion.div>
             <motion.p 
               variants={fadeIn('up', 0.6)}
