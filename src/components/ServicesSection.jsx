@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -57,8 +56,8 @@ const ServicesSection = () => {
             variants={fadeIn('right', 0.7)}
             className="flex items-center gap-2"
           >
-            <div className="w-5 h-5 rounded-full bg-rose-100 flex items-center justify-center">
-              <div className="w-2.5 h-2.5 rounded-full bg-rose-500"></div>
+            <div className="w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center">
+              <div className="w-2.5 h-2.5 rounded-full bg-pink-500"></div>
             </div>
             <span className="text-gray-600">Produits premium et de qualité</span>
           </motion.div>
@@ -66,8 +65,8 @@ const ServicesSection = () => {
             variants={fadeIn('right', 0.8)}
             className="flex items-center gap-2"
           >
-            <div className="w-5 h-5 rounded-full bg-rose-100 flex items-center justify-center">
-              <div className="w-2.5 h-2.5 rounded-full bg-rose-500"></div>
+            <div className="w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center">
+              <div className="w-2.5 h-2.5 rounded-full bg-pink-500"></div>
             </div>
             <span className="text-gray-600">Artistes expérimentées et passionnées</span>
           </motion.div>
@@ -76,7 +75,7 @@ const ServicesSection = () => {
           variants={fadeIn('up', 0.9)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-8 bg-rose-500 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-rose-600 transition-colors"
+          className="mt-8 bg-pink-500 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-pink-600 transition-colors"
         >
           Voir tous les services
         </motion.button>
@@ -92,7 +91,7 @@ const ServicesSection = () => {
             key={index}
             variants={fadeIn('up', 0.3 * (index + 1))}
             whileHover={{ scale: 1.05 }}
-            className="bg-white max-w-72 cursor-pointer rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300 border border-rose-100"
+            className="bg-white max-w-72 cursor-pointer rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300 border border-pink-100"
           >
             <motion.div 
               variants={fadeIn('down', 0.4 * (index + 1))}
@@ -115,7 +114,7 @@ const ServicesSection = () => {
             <motion.a 
               variants={fadeIn('up', 0.6 * (index + 1))}
               href="#"
-              className="text-rose-500 font-medium hover:text-rose-600 transition-colors"
+              className="text-pink-500 font-medium hover:text-pink-600 transition-colors"
             >
               EN SAVOIR PLUS →
             </motion.a>

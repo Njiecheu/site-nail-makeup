@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { motion } from "framer-motion";
 import { fadeIn} from "../utils/motion";
@@ -28,8 +28,7 @@ const Navbar = () => {
           variants={fadeIn('right', 0.3)}
           className="flex items-center gap-2 cursor-pointer"
         >
-          <span className="text-2xl">💅</span>
-          <span className="font-bold text-rose-500">NailBeauty</span>
+          <img src="/logo.png" alt="NailBeauty logo" className="h-[10rem] w-[10rem] object-contain" />
         </motion.div>
         {/* Mobile Menu Button */}
         <motion.button 
@@ -55,8 +54,8 @@ const Navbar = () => {
               variants={fadeIn('down', 0.1 * (index + 1))}
               href={link.href}
               onClick={() => setActiveLink(link.href)}
-              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-rose-500 after:transition-all
-                ${activeLink === link.href ? 'text-rose-500 after:w-full' : 'text-gray-600 hover:text-gray-900'}`}
+              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-500 after:transition-all
+                ${activeLink === link.href ? 'text-pink-500 after:w-full' : 'text-gray-600 hover:text-gray-900'}`}
             >
               {link.label}
             </motion.a>
@@ -68,7 +67,7 @@ const Navbar = () => {
           variants={fadeIn('left', 0.3)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="hidden md:block bg-rose-500 text-white px-6 py-2.5 rounded-lg hover:bg-rose-600 text-sm font-medium transition-all hover:shadow-lg hover:shadow-rose-200"
+          className="hidden md:block bg-pink-500 text-white px-6 py-2.5 rounded-lg hover:bg-pink-600 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-200"
         >
           <a href="#newsletter">Prendre RDV</a>
         </motion.button>
@@ -96,7 +95,7 @@ const Navbar = () => {
                   setIsMenuOpen(false);
                 }}
                 className={`block text-sm font-medium py-2
-                  ${activeLink === link.href ? 'text-rose-500' : 'text-gray-600 hover:text-gray-900'}`}
+                  ${activeLink === link.href ? 'text-pink-500' : 'text-gray-600 hover:text-gray-900'}`}
               >
                 {link.label}
               </motion.a>
@@ -105,7 +104,7 @@ const Navbar = () => {
               variants={fadeIn('up', 0.4)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-rose-500 text-white px-6 py-2.5 rounded-lg hover:bg-rose-600 text-sm font-medium transition-all hover:shadow-lg hover:shadow-rose-200"
+              className="w-full bg-pink-500 text-white px-6 py-2.5 rounded-lg hover:bg-pink-600 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-200"
             >
               Prendre RDV
             </motion.button>

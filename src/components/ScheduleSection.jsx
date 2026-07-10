@@ -31,7 +31,7 @@ const ScheduleSection = () => {
         >
           <motion.span 
             variants={fadeIn('up', 0.4)}
-            className="text-rose-500 font-semibold"
+            className="text-pink-500 font-semibold"
           >
             GALERIE
           </motion.span>
@@ -49,8 +49,8 @@ const ScheduleSection = () => {
           </motion.p>
           <motion.a 
             variants={fadeIn('up', 0.7)}
-            href="#" 
-            className="text-rose-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
+            href="/realisations" 
+            className="text-pink-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
           >
             Voir notre galerie complète
             <motion.svg 

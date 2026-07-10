@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import heroImage from '../assets/hero-image.png'
@@ -11,8 +10,8 @@ const Hero = () => {
         <motion.div variants={fadeIn('right', 0.2)} initial="hidden" whileInView="show">
           {/* Star badge */}
           <div className="flex items-center gap-2 bg-pink-50 w-fit px-4 py-2 rounded-full hover:bg-pink-100 transition-colors cursor-pointer group">
-            <span className="text-rose-500 group-hover:scale-110 transition-transform">✨</span>
-            <span className="text-sm font-medium text-rose-700">Nos prestations premium</span>
+            <span className="text-pink-500 group-hover:scale-110 transition-transform">✨</span>
+            <span className="text-sm font-medium text-pink-700">Nos prestations premium</span>
           </div>
         </motion.div>
 
@@ -23,9 +22,9 @@ const Hero = () => {
           className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
         >
           Sublimez votre beauté avec{' '}
-          <span className="text-rose-500 relative inline-block">
+          <span className="text-pink-500 relative inline-block">
             nail art & makeup
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-rose-300/60"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-300/60"></span>
           </span>{' '}
           professionnels
           <span className="inline-block ml-2 animate-pulse">💅</span>
@@ -47,12 +46,12 @@ const Hero = () => {
           className="flex gap-3 max-w-md"
         >
           {/* CTA Button */}
-          <button className="bg-rose-500 text-white px-8 py-4 rounded-xl hover:bg-rose-600 cursor-pointer transition-all hover:shadow-lg hover:shadow-rose-200 active:scale-95">
-            Prendre rendez-vous
-          </button>
-          <button className="border-2 border-rose-500 text-rose-500 px-8 py-4 rounded-xl hover:bg-rose-50 cursor-pointer transition-all">
+          <a href="#newsletter" className="bg-pink-500 text-white px-8 py-4 rounded-xl hover:bg-pink-600 cursor-pointer transition-all hover:shadow-lg hover:shadow-pink-200 active:scale-95">
+            Prendre un rendez-vous
+          </a>
+          <a href="/realisations" className="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-xl hover:bg-pink-50 cursor-pointer transition-all inline-flex items-center justify-center">
             Découvrir nos prestations
-          </button>
+          </a>
         </motion.div>
       </div>
 

@@ -1,5 +1,4 @@
-import React from 'react'
-import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaTiktok, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -43,8 +42,7 @@ const Footer = () => {
               variants={fadeIn('down', 0.5)}
               className="flex items-center gap-2 mb-6"
             >
-              <span className="text-2xl">💅</span>
-              <span className="text-xl font-bold text-rose-500">NailBeauty</span>
+              <span className="text-xl font-bold text-pink-500">Wok&apos;s Signature</span>
             </motion.div>
             <motion.p 
               variants={fadeIn('up', 0.6)}
@@ -59,23 +57,29 @@ const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.1 }}
                 href="#" 
-                className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center text-rose-500 hover:bg-rose-500 hover:text-white transition-colors"
+                className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 hover:bg-pink-500 hover:text-white transition-colors"
               >
-                <FaFacebookF className="w-4 h-4" />
+                <a href='https://www.tiktok.com/@la_signature62?_r=1&_t=ZS-97uZ46acSFc' target="_blank" rel="noopener noreferrer">
+                  <FaTiktok className="w-4 h-4" />
+                </a>
               </motion.a>
               <motion.a 
                 whileHover={{ scale: 1.1 }}
                 href="#" 
-                className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center text-rose-500 hover:bg-rose-500 hover:text-white transition-colors"
+                className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 hover:bg-pink-500 hover:text-white transition-colors"
               >
-                <FaInstagram className="w-4 h-4" />
+                <a href='https://www.instagram.com/wok_signature?igsh=djlmc2tjaTFpZmM1&utm_source=qr' target="_blank" rel="noopener noreferrer">
+                  <FaInstagram className="w-4 h-4" />
+                </a>
               </motion.a>
               <motion.a 
                 whileHover={{ scale: 1.1 }}
                 href="#" 
-                className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center text-rose-500 hover:bg-rose-500 hover:text-white transition-colors"
+                className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 hover:bg-pink-500 hover:text-white transition-colors"
               >
-                <FaWhatsapp className="w-4 h-4" />
+                <a href="https://wa.me/237658225218" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp className="w-4 h-4" />
+                </a>
               </motion.a>
             </motion.div>
           </motion.div>
@@ -110,7 +114,7 @@ const Footer = () => {
                         <motion.a 
                           whileHover={{ x: 5 }}
                           href={link.href} 
-                          className="text-gray-600 hover:text-rose-500 transition-colors text-sm"
+                          className="text-gray-600 hover:text-pink-500 transition-colors text-sm"
                         >
                           {link.name}
                         </motion.a>
@@ -126,7 +130,7 @@ const Footer = () => {
         {/* Copyright */}
         <motion.div 
           variants={fadeIn('up', 0.8)}
-          className="border-t border-rose-100 mt-12 pt-8"
+          className="border-t border-pink-100 mt-12 pt-8"
         >
           <motion.div 
             variants={fadeIn('up', 0.9)}

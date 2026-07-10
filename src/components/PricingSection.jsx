@@ -61,7 +61,7 @@ const PricingSection = () => {
             >
               <motion.h3
                 variants={textVariant(0.4)}
-                className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-rose-500"
+                className="text-2xl font-bold text-gray-900 mb-6 pb-4 border-b-2 border-pink-500"
               >
                 {groupe.categorie}
               </motion.h3>
@@ -88,7 +88,7 @@ const PricingSection = () => {
                   </div>
                   <motion.p
                     variants={fadeIn('left', 0.3)}
-                    className="text-xl font-bold text-rose-500"
+                    className="text-xl font-bold text-pink-500"
                   >
                     {service.price}
                   </motion.p>
@@ -112,7 +112,7 @@ const PricingSection = () => {
             variants={fadeIn('up', 1.1)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-rose-500 text-white px-8 py-3 rounded-lg hover:bg-rose-600 transition-colors cursor-pointer font-semibold"
+            className="bg-pink-500 text-white px-8 py-3 rounded-lg hover:bg-pink-600 transition-colors cursor-pointer font-semibold"
           >
             Nous Contacter
           </motion.button>

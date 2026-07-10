@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -96,10 +95,10 @@ const FeaturesSection = () => {
           variants={fadeIn('up', 0.8)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-rose-500 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-rose-600 transition-colors relative"
+          className="bg-pink-500 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-pink-600 transition-colors relative"
         >
           Prendre rendez-vous
-          <div className="absolute -z-10 w-full h-full rounded-full bg-rose-500/30 blur-xl top-0 left-0"></div>
+          <div className="absolute -z-10 w-full h-full rounded-full bg-pink-500/30 blur-xl top-0 left-0"></div>
         </motion.button>
       </motion.div>
     </motion.section>

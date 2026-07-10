@@ -21,7 +21,7 @@ const MonitorSection = () => {
         >
           <motion.span 
             variants={fadeIn('up', 0.4)}
-            className="text-rose-500 font-semibold"
+            className="text-pink-500 font-semibold"
           >
             NOTRE APPROCHE
           </motion.span>
@@ -35,12 +35,12 @@ const MonitorSection = () => {
             variants={fadeIn('up', 0.6)}
             className="text-gray-600 mb-8 md:w-4/5"
           >
-            Nous prenons le temps de comprendre vos envies et vos besoins. Avec notre expertise et notre passion pour l'art, nous transformons chaque rendez-vous en une véritable expérience beauté.
+            Nous prenons le temps de comprendre vos envies et vos besoins. Avec notre expertise et notre passion pour l&apos;art, nous transformons chaque rendez-vous en une véritable expérience beauté.
           </motion.p>
           <motion.a 
             variants={fadeIn('up', 0.7)}
             href="#" 
-            className="text-rose-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
+            className="text-pink-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
           >
             Découvrir notre philosophie
             <motion.svg 

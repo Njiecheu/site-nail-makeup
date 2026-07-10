@@ -16,7 +16,7 @@ const PurposeSection = () => {
   ];
 
   return (
-    <section id="about" className="w-full bg-gradient-to-br from-pink-50 to-rose-50 py-16 px-4 md:px-8">
+    <section id="about" className="w-full bg-gradient-to-br from-pink-50 to-pink-50 py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div 
           variants={fadeIn('right', 0.2)}
@@ -27,7 +27,7 @@ const PurposeSection = () => {
           <motion.div variants={fadeIn('right', 0.3)}>
             <motion.div 
               variants={fadeIn('up', 0.4)}
-              className="text-sm text-rose-600 font-medium mb-2"
+              className="text-sm text-pink-600 font-medium mb-2"
             >
               POURQUOI NOUS
             </motion.div>

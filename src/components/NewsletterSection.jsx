@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiArrowRight } from 'react-icons/hi'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -10,7 +9,7 @@ const NewsletterSection = () => {
         variants={fadeIn('up', 0.2)}
         initial="hidden"
         whileInView="show"
-        className="bg-gradient-to-r from-rose-500 to-pink-500 rounded-2xl overflow-hidden"
+        className="bg-gradient-to-r from-pink-500 to-pink-500 rounded-2xl overflow-hidden"
       >
         <div className="relative md:px-16 px-6 py-16 md:py-24">
           {/* Background Gradient */}
@@ -48,9 +47,11 @@ const NewsletterSection = () => {
                 variants={fadeIn('up', 0.6)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full md:w-auto cursor-pointer bg-white text-rose-500 px-8 py-4 rounded-xl hover:bg-rose-50 transition-colors font-semibold flex items-center justify-center gap-2"
+                className="w-full md:w-auto cursor-pointer bg-white text-pink-500 px-8 py-4 rounded-xl hover:bg-pink-50 transition-colors font-semibold flex items-center justify-center gap-2"
               >
-                <span>Prendre un rendez-vous</span>
+                <a href="https://wa.me/237658225218" target="_blank" rel="noopener noreferrer">
+                  Prendre un rendez-vous
+                </a>
                 <HiArrowRight className="w-5 h-5" />
               </motion.button>
             </motion.div>

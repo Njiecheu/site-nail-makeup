@@ -123,3 +123,54 @@ export const footerLinks = {
       { name: 'Email', href: '#' },
     ],
   }
+
+export const galleryItems = [
+  {
+    id: 1,
+    title: 'French rose nails',
+    category: 'Nail art',
+    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 2,
+    title: 'Bridal glam makeup',
+    category: 'Makeup',
+    image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 3,
+    title: 'Gold foil manicure',
+    category: 'Nail art',
+    image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 4,
+    title: 'Soft evening look',
+    category: 'Makeup',
+    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 5,
+    title: 'Sparkle nail set',
+    category: 'Nail art',
+    image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 6,
+    title: 'Glowy skin makeup',
+    category: 'Makeup',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 7,
+    title: 'Elegant nude nails',
+    category: 'Nail art',
+    image: 'https://images.unsplash.com/photo-1610992035741-710da3c1f7d4?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 8,
+    title: 'Signature glam eyes',
+    category: 'Makeup',
+    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80',
+  },
+]
