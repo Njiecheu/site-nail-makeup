@@ -5,7 +5,7 @@ export const whyUs = [
     {
       icon: "✨",
       title: "Expertise & Créativité",
-      description: "Des artistes passionnées spécialisées en nail art et makeup, avec des années d'expérience et des techniques à la pointe"
+      description: "Des artistes passionnées spécialisées en Manucure et Make up, avec des années d'expérience et des techniques à la pointe"
     },
     {
       icon: "💅",
@@ -14,12 +14,12 @@ export const whyUs = [
     }
   ];
 
-//   features section - nail art services
+//   features section - Manucure services
 
 export const nailArtServices = [
     {
       icon: "💎", 
-      title: "Nail Art Classique",
+      title: "Manucure Classique",
       description: "Designs personnalisés avec vernis gel de haute qualité"
     },
     {
@@ -34,8 +34,8 @@ export const nailArtServices = [
     }
   ]
 
-//   makeup services section
-export const makeupServices = [
+//   Make up services section
+export const Make upServices = [
     {
       icon: "💄",
       title: "Maquillage du Jour",
@@ -114,7 +114,7 @@ export const footerLinks = {
       { name: 'Contact', href: '#' },
     ],
     services: [
-      { name: 'Nail Art', href: '#' },
+      { name: 'Manucure', href: '#' },
       { name: 'Extensions', href: '#' },
       { name: 'Maquillage', href: '#' },
     ],
@@ -127,27 +127,27 @@ export const footerLinks = {
 export const galleryItems = [
   {
     id: 1,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719718/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41OS4wMV9QTV95Zjdnbjc=/preview',
   },
   {
     id: 2,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719718/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41OS4wM19QTV9zc2dtdDg=/preview',
   },
   {
     id: 3,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719718/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41OS4wN19QTV9hejJ1czg=/preview',
   },
   {
     id: 4,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719717/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41OS4wN19QTV8xX2wydDN2aw==/preview',
   },
   {
     id: 5,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719717/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41OS4wOF9QTV92czNmemQ=/preview',
   },
   {
@@ -182,17 +182,17 @@ export const galleryItems = [
   },
   {
     id: 12,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719715/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41MC4wMF9QTV8yX2x3ZnNndA==/preview',
   },
   {
     id: 13,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719714/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41MC4wMV9QTV8yX2hvMWNhag==/preview',
   },
   {
     id: 14,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719714/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC4wNi4yMF9BTV9mODlsaDg=/preview',
   },
   {
@@ -202,7 +202,7 @@ export const galleryItems = [
   },
   {
     id: 16,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719713/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC4wNi4xOV9BTV8xX29ldjJ0cA==/preview',
   },
   {
@@ -212,7 +212,7 @@ export const galleryItems = [
   },
   {
     id: 18,
-    category: 'Nail art',
+    category: 'Manucure',
     image: 'https://res-console.cloudinary.com/dsjm7paqn/thumbnails/v1/image/upload/v1783719713/V2hhdHNBcHBfSW1hZ2VfMjAyNi0wNy0xMF9hdF8xMC41MC4wMF9QTV9saTJpd2E=/preview',
   },
 ]

@@ -55,7 +55,7 @@ const RealisationsPage = () => {
             ✨ Catalogue des réalisations
           </motion.span>
           <motion.h1 variants={textVariant(0.4)} className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nail art & makeup déjà réalisés
+            Manucure & Make up déjà réalisés
           </motion.h1>
           <motion.p variants={fadeIn('up', 0.5)} className="text-gray-600 max-w-2xl mx-auto">
             Parcourez une sélection de nos créations pour vous inspirer avant votre rendez-vous.

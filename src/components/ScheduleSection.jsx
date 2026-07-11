@@ -45,7 +45,7 @@ const ScheduleSection = () => {
             variants={fadeIn('up', 0.6)}
             className="text-gray-600 mb-8"
           >
-            Retrouvez les plus belles créations de nos artistes. Des nail art élaborés aux maquillages sophistiqués, découvrez la qualité et la créativité de notre travail.
+            Retrouvez les plus belles créations de nos artistes. Des manucures élaborés aux maquillages sophistiqués, découvrez la qualité et la créativité de notre travail.
           </motion.p>
           <motion.a 
             variants={fadeIn('up', 0.7)}

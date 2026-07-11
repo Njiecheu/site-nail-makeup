@@ -6,7 +6,7 @@ const PurposeSection = () => {
     {
       icon: "✨",
       title: "Expertise & Créativité",
-      description: "Des artistes passionnées spécialisées en nail art et makeup, avec des années d'expérience et des techniques à la pointe"
+      description: "Des artistes passionnées spécialisées en Manucure et Make up, avec des années d'expérience et des techniques à la pointe"
     },
     {
       icon: "💅",

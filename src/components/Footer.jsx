@@ -5,7 +5,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const Footer = () => {
   const footerLinks = {
     prestations: [
-      { name: 'Nail Art'},
+      { name: 'Manucure'},
       { name: 'Extensions'},
       { name: 'Maquillage'},
     ],

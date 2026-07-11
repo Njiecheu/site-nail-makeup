@@ -5,7 +5,7 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: "�", 
-      title: "Nail Art Personnalisé",
+      title: "Manucure Personnalisé",
       description: "Designs sur mesure adaptés à vos envies et votre style personnel"
     },
     {

@@ -23,7 +23,7 @@ const Hero = () => {
         >
           Sublimez votre beauté avec{' '}
           <span className="text-pink-500 relative inline-block">
-            nail art & makeup
+            Manucure & Make up
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-300/60"></span>
           </span>{' '}
           professionnels
@@ -35,7 +35,7 @@ const Hero = () => {
           whileInView="show"
           className="text-gray-600 text-lg md:text-xl max-w-xl"
         >
-          Des artistes spécialisées pour transformer votre look au quotidien ou pour vos moments spéciaux. Extensions, nail art créatif et maquillage professionnel.
+          Des artistes spécialisées pour transformer votre look au quotidien ou pour vos moments spéciaux. Extensions, Manucure créatif et maquillage professionnel.
         </motion.p>
 
         <motion.div 
@@ -64,7 +64,7 @@ const Hero = () => {
         <div className="relative">
           <img
             src="https://media.gettyimages.com/id/1322729004/fr/photo/set-of-manicure-tools-on-trendy-pastel-pink-background-nail-files-scissors-cuticle-clippers.jpg?s=612x612&w=0&k=20&c=uKXhhrS61eNHXvF0dv1rAJhNW7IMO108ZN26BFQbfwY="
-            alt="Nail art et makeup professionnel"
+            alt="Manucure et Make up professionnel"
             className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
           />
         </div>

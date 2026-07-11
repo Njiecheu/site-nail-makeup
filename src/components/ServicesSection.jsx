@@ -7,7 +7,7 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: "Nail Art",
+      title: "Manucure",
       description: "Designs personnalisés avec vernis gel de haute qualité, durables et brillants",
     },
     {
@@ -32,7 +32,7 @@ const ServicesSection = () => {
     },
     {
       title: "3D flowers",
-      description: "Fleurs en relief réalisées à la main pour un nail art romantique et raffiné.",
+      description: "Fleurs en relief réalisées à la main pour un Manucure romantique et raffiné.",
     },
     {
       title: "Airbrush",

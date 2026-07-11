@@ -4,7 +4,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const PricingSection = () => {
   const prestations = [
     {
-      categorie: "Nail Art",
+      categorie: "Manucure",
       services: [
         {
           name: "Manucure",
