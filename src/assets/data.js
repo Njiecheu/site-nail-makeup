@@ -34,8 +34,8 @@ export const nailArtServices = [
     }
   ]
 
-//   Make up services section
-export const Make upServices = [
+//   makeup services section
+export const makeupServices = [
     {
       icon: "💄",
       title: "Maquillage du Jour",
