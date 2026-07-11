@@ -1,4 +1,4 @@
-import scheduleImage from '../assets/stats.webp'
+//import scheduleImage from '../assets/stats.webp'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -18,7 +18,7 @@ const ScheduleSection = () => {
         >
           <motion.img 
             variants={fadeIn('up', 0.4)}
-            src={scheduleImage} 
+            src="https://media.gettyimages.com/id/1875305679/fr/photo/close-up-of-nail-scissors-and-manicure-cosmetics.jpg?s=612x612&w=0&k=20&c=CUl4LxuFK3LdD78s3SMCbKWp5LV-qzSiMkbmQ4t3fW0="
             alt="Galerie nos réalisations" 
             className="w-full h-auto rounded-xl"
           />

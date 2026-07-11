@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import heroImage from '../assets/hero.jpg'
+//import heroImage from '../assets/hero.jpg'
 
 const Hero = () => {
   return (
@@ -63,7 +63,7 @@ const Hero = () => {
       >
         <div className="relative">
           <img
-            src={heroImage}
+            src="https://media.gettyimages.com/id/1322729004/fr/photo/set-of-manicure-tools-on-trendy-pastel-pink-background-nail-files-scissors-cuticle-clippers.jpg?s=612x612&w=0&k=20&c=uKXhhrS61eNHXvF0dv1rAJhNW7IMO108ZN26BFQbfwY="
             alt="Nail art et makeup professionnel"
             className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
           />

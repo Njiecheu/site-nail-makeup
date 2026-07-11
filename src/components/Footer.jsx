@@ -5,19 +5,19 @@ import { fadeIn, textVariant } from "../utils/motion";
 const Footer = () => {
   const footerLinks = {
     prestations: [
-      { name: 'Nail Art', href: '#' },
-      { name: 'Extensions', href: '#' },
-      { name: 'Maquillage', href: '#' },
+      { name: 'Nail Art'},
+      { name: 'Extensions'},
+      { name: 'Maquillage'},
     ],
     infos: [
-      { name: 'À Propos', href: '#' },
-      { name: 'Galerie', href: '#' },
-      { name: 'Contact', href: '#' },
+      { name: 'À Propos'},
+      { name: 'Galerie', href: '/realisations' },
+      { name: 'Contact'},
     ],
     legal: [
-      { name: 'Confidentialité', href: '#' },
-      { name: 'Conditions', href: '#' },
-      { name: 'Mentions légales', href: '#' },
+      { name: 'Confidentialité'},
+      { name: 'Conditions'},
+      { name: 'Mentions légales'},
     ],
   }
 
@@ -140,7 +140,7 @@ const Footer = () => {
               variants={fadeIn('right', 1.0)}
               className="text-gray-600 text-sm"
             >
-              © {new Date().getFullYear()} NailBeauty. Tous droits réservés.
+              © {new Date().getFullYear()} Wok&apos;Signature. Tous droits réservés.
             </motion.p>
             <motion.p 
               variants={fadeIn('left', 1.0)}

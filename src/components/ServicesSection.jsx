@@ -1,29 +1,70 @@
+import { useState } from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServicesSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   const services = [
     {
-      icon: "💎",
-      title: "Nail Art Classique",
+      title: "Nail Art",
       description: "Designs personnalisés avec vernis gel de haute qualité, durables et brillants",
     },
     {
-      icon: "👑",
       title: "Extensions d'Ongles", 
       description: "Pose d'extensions (acrylique, gel) avec finitions parfaites et formes variées",
     },
     {
-      icon: "🌸",
-      title: "Nail Design Premium",
-      description: "Créations exclusives avec strass, foil doré, effets 3D et techniques avancées",
-    },
-    {
-      icon: "💄",
       title: "Maquillage du Jour",
       description: "Maquillage professionnel pour un look naturel et lumineux au quotidien",
-    }
+    },
+    {
+      title: "French tips",
+      description: "Pose élégante avec pointes nettes et finition clean pour un rendu intemporel.",
+    },
+    {
+      title: "Incrustation",
+      description: "Décoration sophistiquée avec paillettes, éléments 3D et incrustations artistiques.",
+    },
+    {
+      title: "Babyboomer",
+      description: "Dégradé doux et naturel du rose vers le blanc pour un effet chic et discret.",
+    },
+    {
+      title: "3D flowers",
+      description: "Fleurs en relief réalisées à la main pour un nail art romantique et raffiné.",
+    },
+    {
+      title: "Airbrush",
+      description: "Application d'effets dégradés et motifs précis à l'aérographe pour un rendu moderne.",
+    },
+    {
+      title: "Cat eyes",
+      description: "Effet magnétique intense qui capte la lumière et donne de la profondeur aux ongles.",
+    },
+    {
+      title: "Rhinestones",
+      description: "Ajout de strass brillants pour une touche glamour et lumineuse.",
+    },
+    {
+      title: "Travel service",
+      description: "Prestation à domicile ou en déplacement pour plus de confort et de flexibilité.",
+    },
+    {
+      title: "Shoot make up",
+      description: "Maquillage pensé pour les shootings photo avec tenue longue durée et rendu impeccable.",
+    },
+    {
+      title: "Home service",
+      description: "Service à domicile pour bénéficier d'une prestation complète sans vous déplacer.",
+    },
+    {
+      title: "Bridal make up",
+      description: "Maquillage mariée élégant et durable, conçu pour sublimer votre journée spéciale.",
+    },
   ]
+
+  const featuredServices = services.slice(0, 4)
 
   return (
     <section id="services" className="py-20 container mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,6 +117,7 @@ const ServicesSection = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="mt-8 bg-pink-500 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-pink-600 transition-colors"
+          onClick={() => setIsModalOpen(true)}
         >
           Voir tous les services
         </motion.button>
@@ -86,7 +128,7 @@ const ServicesSection = () => {
         variants={fadeIn('left', 0.4)}
         className="grid grid-cols-1 md:grid-cols-2 gap-8"
       >
-        {services.map((service, index) => (
+        {featuredServices.map((service, index) => (
           <motion.div 
             key={index}
             variants={fadeIn('up', 0.3 * (index + 1))}
@@ -116,11 +158,50 @@ const ServicesSection = () => {
               href="#"
               className="text-pink-500 font-medium hover:text-pink-600 transition-colors"
             >
-              EN SAVOIR PLUS →
+              
             </motion.a>
           </motion.div>
         ))}
       </motion.div>
+
+      {isModalOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-6"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <motion.div
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="max-h-[85vh] w-full max-w-5xl overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="mb-6 flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">Tous nos services</h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsModalOpen(false)}
+                className="rounded-full bg-gray-100 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-200 transition-colors"
+              >
+                Fermer
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {services.map((service, index) => (
+                <article key={index} className="rounded-2xl border border-pink-100 bg-pink-50 p-4">
+                  <h4 className="text-lg font-semibold text-gray-900">{service.title}</h4>
+                  <p className="mt-2 text-sm text-gray-600">{service.description}</p>
+                </article>
+              ))}
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
      </motion.div>
     </section>
   )

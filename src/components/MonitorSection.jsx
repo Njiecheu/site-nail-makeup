@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import 'swiper/css';
 import 'swiper/css/navigation';
-import monitorCardBg from '../assets/monitor-card.webp';
+//import monitorCardBg from '../assets/monitor-card.webp';
 
 const MonitorSection = () => {
   return (
@@ -42,7 +42,7 @@ const MonitorSection = () => {
             href="#" 
             className="text-pink-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
           >
-            Découvrir notre philosophie
+           {/* Découvrir notre philosophie
             <motion.svg 
               variants={fadeIn('left', 0.8)}
               className="w-5 h-5" 
@@ -56,7 +56,7 @@ const MonitorSection = () => {
                 strokeWidth={2} 
                 d="M17 8l4 4m0 0l-4 4m4-4H3" 
               />
-            </motion.svg>
+            </motion.svg>*/}
           </motion.a>
         </motion.div>
 
@@ -71,7 +71,7 @@ const MonitorSection = () => {
           >
             <motion.img 
               variants={fadeIn('up', 0.5)}
-              src={monitorCardBg}
+              src="https://media.gettyimages.com/id/88853058/fr/photo/pedicure-accessories.jpg?s=612x612&w=0&k=20&c=TDzt1pmxizaLYwUqDB3VluECVgflsHK24-9rnwboGP0="
               alt="Nos créations beauté"
               className="w-full h-auto rounded-lg"
             />
