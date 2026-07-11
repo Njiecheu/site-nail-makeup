@@ -7,7 +7,7 @@ const PricingSection = () => {
       categorie: "Nail Art",
       services: [
         {
-          name: "Manicure",
+          name: "Manucure",
           items: [
             { name: "Capsule vernis gel & gelX", price: "3 000FCFA" },
             { name: "Chablon", price: "à partir de 10 000FCFA" },
