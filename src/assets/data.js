@@ -1,4 +1,3 @@
-
 //   about section / why us
 
 export const whyUs = [
