@@ -17,6 +17,7 @@ import BackToTop from './components/BackToTop'
 
 function App() {
   const [path, setPath] = useState(window.location.pathname)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const handlePopState = () => setPath(window.location.pathname)
@@ -25,8 +26,22 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState)
   }, [])
 
+  useEffect(() => {
+    const onLoad = () => setTimeout(() => setLoading(false), 300)
+    window.addEventListener('load', onLoad)
+    const fallback = setTimeout(() => setLoading(false), 6000)
+    return () => {
+      window.removeEventListener('load', onLoad)
+      clearTimeout(fallback)
+    }
+  }, [])
+
   if (path === '/realisations') {
-    return <RealisationsPage />
+    return (
+      <>
+        <RealisationsPage />
+      </>
+    )
   }
 
   return (
@@ -47,6 +62,11 @@ function App() {
         <Footer />
       </div>
       <BackToTop />
+        {loading && path === '/' && (
+          <div className="splash">
+            <img src="/logo.png" alt="logo" className="splash-logo" />
+          </div>
+        )}
     </main>
   )
 }

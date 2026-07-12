@@ -23,7 +23,7 @@ const Hero = () => {
         >
           Sublimez votre beauté avec{' '}
           <span className="text-pink-500 relative inline-block">
-            Manucure & Make up
+            Nail art & Make up
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-300/60"></span>
           </span>{' '}
           professionnels
