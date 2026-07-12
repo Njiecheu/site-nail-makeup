@@ -13,6 +13,7 @@ import TestimonialsSection from './components/TestimonialsSection'
 import NewsletterSection from './components/NewsletterSection'
 import Footer from './components/Footer'
 import RealisationsPage from './components/RealisationsPage'
+import BackToTop from './components/BackToTop'
 
 function App() {
   const [path, setPath] = useState(window.location.pathname)
@@ -45,6 +46,7 @@ function App() {
         <NewsletterSection />
         <Footer />
       </div>
+      <BackToTop />
     </main>
   )
 }
