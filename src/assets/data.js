@@ -162,7 +162,7 @@ export const galleryItems = [
   },
   {
     id: 8,
-    category: 'Make up',
+    category: 'Manucure',
     image: 'https://res.cloudinary.com/dsjm7paqn/image/upload/v1783719716/WhatsApp_Image_2026-07-10_at_10.50.01_PM_1_vnibei.jpg',
   },
   {
@@ -172,12 +172,12 @@ export const galleryItems = [
   },
   {
     id: 10,
-    category: 'Make up',
+    category: 'Manucure',
     image: 'https://res.cloudinary.com/dsjm7paqn/image/upload/v1783719715/WhatsApp_Image_2026-07-10_at_10.50.00_PM_1_vlyekp.jpg',
   },
   {
     id: 11,
-    category: 'Make up',
+    category: 'Manucure',
     image: 'https://res.cloudinary.com/dsjm7paqn/image/upload/v1783719715/WhatsApp_Image_2026-07-10_at_10.50.01_PM_ww8tzo.jpg',
   },
   {
@@ -202,16 +202,11 @@ export const galleryItems = [
   },
   {
     id: 16,
-    category: 'Manucure',
-    image: 'https://res.cloudinary.com/dsjm7paqn/image/upload/v1783719713/WhatsApp_Image_2026-07-10_at_10.06.19_AM_1_oev2tp.jpg',
-  },
-  {
-    id: 17,
     category: 'Make up',
     image: 'https://res.cloudinary.com/dsjm7paqn/image/upload/v1783719713/WhatsApp_Image_2026-07-10_at_10.14.35_AM_nc1xi5.jpg',
   },
   {
-    id: 18,
+    id: 17,
     category: 'Manucure',
     image: 'https://res.cloudinary.com/dsjm7paqn/image/upload/v1783719713/WhatsApp_Image_2026-07-10_at_10.50.00_PM_li2iwa.jpg',
   },

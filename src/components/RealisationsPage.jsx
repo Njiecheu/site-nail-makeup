@@ -12,14 +12,14 @@ const RealisationsPage = () => {
   const [previewItem, setPreviewItem] = useState(null)
   const swiperRefs = useRef([])
 
-  const galleryFilters = ['All', 'Nail art', 'Make up']
+  const galleryFilters = ['All', 'Manucure', 'Make up']
 
   const filteredGalleryItems = useMemo(() => {
     if (activeFilter === 'All') {
       return galleryItems
     }
 
-    return galleryItems.filter((item) => item.category === (activeFilter === 'Make up' ? 'Make up' : 'Nail art'))
+    return galleryItems.filter((item) => item.category === (activeFilter === 'Make up' ? 'Make up' : 'Manucure'))
   }, [activeFilter])
 
   const carouselRows = useMemo(() => {
@@ -62,8 +62,18 @@ const RealisationsPage = () => {
           </motion.p>
         </motion.div>
 
+        <div className="text-center mb-8">
+          <button
+            type="button"
+            onClick={() => setShowAll((current) => !current)}
+            className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-6 py-3 text-white font-semibold hover:bg-gray-800 transition-colors"
+          >
+            {showAll ? 'Masquer la galerie' : 'Voir toute la galerie'}
+          </button>
+        </div>
+
         {!showAll && (
-          <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView="show" className="space-y-8 mb-10">
+          <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView="show" className="relative space-y-8 mb-10">
             {[0, 1].map((rowIndex) => (
               <div
                 key={rowIndex}
@@ -111,14 +121,9 @@ const RealisationsPage = () => {
               </div>
             ))}
 
-            {/*<div className="flex justify-center gap-4">
-              <button className="swiper-button-prev-gallery w-11 h-11 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 transition-colors">
-                <BsChevronLeft className="w-5 h-5" />
-              </button>
-              <button className="swiper-button-next-gallery w-11 h-11 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 transition-colors">
-                <BsChevronRight className="w-5 h-5" />
-              </button>
-            </div>*/}
+            {/* navigation buttons (hidden by default) */}
+
+            {/* navigation buttons (hidden by default) */}
           </motion.div>
         )}
 
@@ -141,15 +146,7 @@ const RealisationsPage = () => {
           </div>
         )}
 
-        <div className="text-center mb-10">
-          <button
-            type="button"
-            onClick={() => setShowAll((current) => !current)}
-            className="inline-flex items-center justify-center rounded-xl bg-gray-900 px-6 py-3 text-white font-semibold hover:bg-gray-800 transition-colors"
-          >
-            {showAll ? 'Masquer la galerie' : 'Voir toute la galerie'}
-          </button>
-        </div>
+        {/* button moved inside carousel when not showing all */}
 
         {showAll && (
           <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView="show" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -198,12 +195,6 @@ const RealisationsPage = () => {
             </div>
           </div>
         )}
-
-        <div className="mt-12 text-center">
-          <a href="/" className="inline-flex items-center rounded-xl border border-pink-200 px-6 py-3 font-semibold text-pink-600 hover:bg-pink-50 transition-colors">
-            Retour à l&apos;accueil
-          </a>
-        </div>
       </section>
     </main>
   )
